@@ -235,3 +235,8 @@ VALUES
 (4,7, 'editor'),
 (4, 18, 'visitor');
 
+INSERT INTO session 
+    (user_id, start_time, end_time)
+    VALUES
+    (1, '2024-03-13 14:17:00', CURRENT_TIMESTAMP),
+    (2, '2024-03-13 14:07:00', '2024-03-13 14:17:00');

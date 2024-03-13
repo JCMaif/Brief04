@@ -7,6 +7,7 @@ DROP TABLE IF EXISTS post CASCADE;
 DROP TABLE IF EXISTS "user" CASCADE;
 DROP TABLE IF EXISTS "group" CASCADE;
 DROP TABLE IF EXISTS group_member CASCADE;
+DROP TABLE IF EXISTS session CASCADE;
 
 CREATE TABLE IF NOT EXISTS "user"
 (
@@ -68,13 +69,19 @@ CREATE TABLE IF NOT EXISTS follow
     CONSTRAINT follow_pkey PRIMARY KEY (follower, followed)
 );
 
-
-
 CREATE TABLE IF NOT EXISTS group_member (
     group_id INTEGER NOT NULL REFERENCES "group"(id) ON DELETE CASCADE,
     user_id INTEGER NOT NULL REFERENCES "user"(id) ON DELETE CASCADE,
     role VARCHAR(32) NOT NULL,
     CONSTRAINT group_member_pkey PRIMARY KEY (group_id, user_id)
 );
+
+CREATE TABLE IF NOT EXISTS session (
+    id serial PRIMARY KEY,
+    user_id INTEGER REFERENCES "user" (id) ON DELETE CASCADE,
+    start_time TIMESTAMP NOT NULL,
+    end_time TIMESTAMP NOT NULL
+);
+
 
 COMMIT;

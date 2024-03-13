@@ -14,46 +14,48 @@ Ce projet est une base de données SQL permettant de répondre aux besoin pour l
 ## Conception
 
 Ce projet comporte les documents de conception du projet :
--  [les user stories](./userStories.md), 
+- [les user stories](./userStories.md), 
 - [le MCD](./MCD.md), 
 - [le MLD](./mld.drawio)
 
 
-## Requêtes à faire
+## Requêtes du projet
 
-- [x] Liste des utilisateurs
-- [x] Requête pour créer un utilisateur
-- [x] Requête pour qu'un utilisateur connecté puisse modifier son profil
+- [x] Afficher la liste des utilisateurs
+- [x] Créer un utilisateur
+- [x] Modifier le profil d'un utilisateur
 - [x] Supprimer un utilisateur selon son id
-- [x] Requête pour obtenir le profil d'un utilisateur en fonction de son nom (prénom ou nom)
-- [x] Lire le flow de publications par popularité
-- [x] Lire le flow de publications par date 
-- [x] Pagination des flows
+- [x] Obtenir le profil d'un utilisateur en fonction de son nom (prénom ou nom)
+- [x] Lire le fil de publications par popularité
+- [x] Lire le fil de publications par date 
+- [x] Pagination des fils
 - [x] Présenter l'accès au tutoriel
-- [x] Requête pour suivre un utilisateur
-- [x] Requête pour supprimer le suivi d'un utilisateur
-- [x] Requête pour la liste des notifications pour un utilisateur suivi
-- [x] Création d'une publication
-- [x] Suppression d'une publication
-- [x] Modification d'une publication
-- [x] Ajout d'un commentaire
+- [x] Suivre un utilisateur
+- [x] Supprimer le suivi d'un utilisateur
+- [x] Gérer la liste des notifications pour un utilisateur suivi
+- [x] Créer d'une publication
+- [x] Supprimer une publication
+- [x] Modifier une publication
+- [x] Ajouter un commentaire
 - [x] Répondre à un commentaire
 - [x] Afficher tous les commentaires d'un post et leurs réponses
 - [x] Afficher toutes les réactions à un post
-- [x] Recherche par mot clé  dans les publications
+- [x] Rechercher par mot clé  dans les publications
 - [x] Filtrer les publications selon les auteurs
 - [x] Filtrer les publications selon les dates
 - [x] Filtrer les publications selon la popularité
 - [x] Créer, modifier, supprimer des groupes de partage
-- [x] Créer un membre, lui attribuer un rôle
+- [x] Créer un membre d'un groupe, lui attribuer un rôle
 - [x] Supprimer un membre du groupe
 - [x] Créer, modifier, supprimer une publication dans un groupe
 
-Les requêtes sont réalisées dans le fichier [queries.sql](./queries.sql). Elles sont pour la plupart réalisées pour un exemple basé sur le jeu de données fourni.
+Les requêtes sont réalisées dans le fichier [queries.sql](./queries.sql). Elles sont pour la plupart réalisées pour un exemple basé sur le jeu de données fourni. 
+Pour faciliter le travail du développeur, la plupart des requêtes présentant des modes d'affichage sont stockées sous forme de vues. Cela garantit l'uniformité des résultats et l'optimisation des requêtes.
 
 ### Bonus
 
-- [] Durée moyenne des sessions utilisateurs
+- [x] Durée moyenne des sessions utilisateurs
+- [x] Durée moyenne des sessions, par
 - [] Nombre moyen de posts par utilisateur
 - [] Nombre moyen de posts visionnés par session utilisateur
 - [] Temps moyen passé à l'écriture d'un post
