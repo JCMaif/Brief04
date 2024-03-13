@@ -24,14 +24,18 @@ Ce projet comporte les documents de conception du projet :
 - [x] Liste des utilisateurs
 - [x] Requête pour créer un utilisateur
 - [x] Requête pour qu'un utilisateur connecté puisse modifier son profil
+- [x] Supprimer un utilisateur selon son id
 - [x] Requête pour obtenir le profil d'un utilisateur en fonction de son nom (prénom ou nom)
-- [x] Lire le flow de publications par popularité (+ pagination)
-- [x] Lire le flow de publications par date (+ pagination)
+- [x] Lire le flow de publications par popularité
+- [x] Lire le flow de publications par date 
+- [x] Pagination des flows
 - [x] Présenter l'accès au tutoriel
 - [x] Requête pour suivre un utilisateur
 - [x] Requête pour supprimer le suivi d'un utilisateur
 - [x] Requête pour la liste des notifications pour un utilisateur suivi
 - [x] Création d'une publication
+- [x] Suppression d'une publication
+- [x] Modification d'une publication
 - [x] Ajout d'un commentaire
 - [x] Répondre à un commentaire
 - [x] Afficher tous les commentaires d'un post et leurs réponses
@@ -40,5 +44,19 @@ Ce projet comporte les documents de conception du projet :
 - [x] Filtrer les publications selon les auteurs
 - [x] Filtrer les publications selon les dates
 - [x] Filtrer les publications selon la popularité
+- [x] Créer, modifier, supprimer des groupes de partage
+- [x] Créer un membre, lui attribuer un rôle
+- [x] Supprimer un membre du groupe
+- [x] Créer, modifier, supprimer une publication dans un groupe
 
 Les requêtes sont réalisées dans le fichier [queries.sql](./queries.sql). Elles sont pour la plupart réalisées pour un exemple basé sur le jeu de données fourni.
+
+### Bonus
+
+- [] Durée moyenne des sessions utilisateurs
+- [] Nombre moyen de posts par utilisateur
+- [] Nombre moyen de posts visionnés par session utilisateur
+- [] Temps moyen passé à l'écriture d'un post
+- [] Nombre moyen de modifications d'un post déjà publié
+- [] Temps moyen passé sur un fil, regroupé par type de fil
+- [] Visualiser le log des modifications (Nom de compte, post, etc..)
