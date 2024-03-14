@@ -87,7 +87,7 @@ SELECT c1.id AS commentaire_id, c1.description AS commentaire_description, c1.us
        c2.id AS reponse_id, c2.description AS reponse_description, c2.user_id AS reponse_user_id
 FROM comment c1
 LEFT JOIN comment c2 ON c1.id = c2.parent
-WHERE c1.post_id = 5;
+WHERE c1.post_id = 3;
 
 -- Utiliser la vue
 SELECT * FROM all_comments;

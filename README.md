@@ -19,7 +19,7 @@ Ce projet comporte les documents de conception du projet :
 - [le MLD](./mld.drawio)
 
 
-## Requêtes du projet
+## Requêtes du projet (MVP)
 
 - [x] Afficher la liste des utilisateurs
 - [x] Créer un utilisateur

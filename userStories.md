@@ -17,8 +17,6 @@
 |Utilisateur connecté|être notifié des publications d'un utilisateur suivi||
 |Utilisateur connecté|créer une publication avec sa pièce jointe||
 
-
-
 ## Fonctionnalités additionnelles
 
 |En tant que...| je souhaite...| afin de ...|
