@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS "user"
     lastname character varying(50) NOT NULL,
     firstname character varying(50) NOT NULL,
     email character varying(50) NOT NULL,
-    img_url character varying(100) ,
+    img_url character varying(100),
     first_login BOOLEAN DEFAULT true,
     password  character varying(50) NOT NULL default ''
 );
@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS post
     title text NOT NULL,
     description text,
     date TIMESTAMP WITH TIME ZONE NOT NULL,
+    img_url character varying(255),
     user_id integer REFERENCES "user" (id) ON DELETE SET NULL,
     group_id INTEGER REFERENCES "group"(id) ON DELETE CASCADE        
 );

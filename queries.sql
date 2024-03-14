@@ -26,6 +26,8 @@ SET first_login = false
 WHERE id =1;
 
 -- Supprimer un utilisateur selon son id
+-- ATTENTION ! La suppression d'un utilisateur implique la suppression des groupes créés par cet utilisateur, et ses réactions. 
+-- Ses posts et commentaires seront conservés mais leur auteur sera "inconnu"
 DELETE FROM "user" WHERE id=2;
 
 --***************** Publications ***********************
@@ -45,22 +47,23 @@ SELECT * FROM post
 ORDER BY date DESC LIMIT 10 OFFSET 0; -- pour chaque page, on ajoute 10 à offset pour la pagination
 
 -- Création d'une publication
-INSERT INTO post (title, description, date, user_id)
-VALUES ('Titre de la publication', 'Description de la publication', CURRENT_TIMESTAMP, 14);
+INSERT INTO post (title, description, date, img_url, user_id)
+VALUES ('Titre de la publication', 'Description de la publication', CURRENT_TIMESTAMP, 'Lien image', 14);
 
 -- Suppression d'une publication
-DELETE  FROM post WHERE id=2;
+DELETE FROM post WHERE id=2;
 
 -- Modification d'une publication
 UPDATE post 
 SET title='Nouveau titre', 
-description='Nouvelle description' 
-WHERE id=3;
+description='Nouvelle description',
+img_url='Nouveau lien image' 
+WHERE id=5;
 
 --***************** Following ***********************
 -- Requête pour suivre un utilisateur
-INSERT INTO follow (follower, followed)
-VALUES (1,11); -- 1er terme : id de l'utilisateur courant,  2ème terme : id de l'utilisateur que l'on veut suivre
+INSERT INTO follow (follower, followed, toBeNotified)
+VALUES (1,11, true); -- 1er terme : id de l'utilisateur courant,  2ème terme : id de l'utilisateur que l'on veut suivre
 
 -- Requête pour supprimer le suivi d'un utilisateur
 DELETE FROM follow
@@ -171,3 +174,11 @@ SELECT user_id, AVG(end_time - start_time) AS Average_session
 FROM session
 GROUP BY user_id
 ORDER BY user_id ASC;
+
+-- Nombre moyen de posts par utilisateur
+SELECT AVG(post_count) AS avg_post
+FROM (
+    SELECT COUNT(*) AS post_count
+    FROM post
+    GROUP BY user_id);
+

@@ -158,31 +158,36 @@ VALUES
 ('art', 'Group for artists lovers', false, 5),
 ('travel', 'Group for travelers', false, 6);
 
-INSERT INTO post (title, description, date, user_id, group_id)
+INSERT INTO post (title, description, date, img_url, user_id, group_id)
 VALUES (
         'Glowing, antiduke_99 (me), soft pastel, 2024',
         'For a couple of weeks we''ve been getting messages from users not being able to post on this sub: the Post button remains greyed out. The commonality of the reports seem to be that they have been trying to use the Android reddit app to post. So if this problem has been bugging you, please report it to Reddit in the android app store. Until it''s fixed you can post your art in the web browser on a computer.\n\nAnd yes, we know the app seemingly allows posting on other subs, and not on /r/Art. But the iPhone app works fine (tested myself). It probably has to do with the title requirements that this sub has, it uses a thing called regex, and I suspect this title requirement is causing the android app to not function correctly.',
         '2023-10-11T19:49:17.508Z',
+        'https://preview.redd.it/i-spy-antiduke-99-me-soft-pastel-2023-v0-uawfikcejzbb1.jpg?width=1080&crop=smart&auto=webp&s=0c6755e2e96e5b0d978d07f0fc98e39f139562f7',
         2, null
     ),
     (
         'Into the Mind of a Preda…nko, Oil Painting, 2024',
         'For a couple of weeks .',
         '2023-10-11T19:49:17.407Z',
+        'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiyySNtpYS7nPhuB6N7Ocv_faq5mfBRlpleLpe29lit89k4ebkqbD9SxqwCK0gdhUF7B2ajz5LuYiKo7ZFWCblQo6YYUxgax3o_samVXG_PbIfLbyIVFj9BUw5SvZbSPUf1wNKULbUHDw/s1600/8365988881_1835dc9ce2_k.jpg',
         5, null
     ),
     (
         'Ladybird, Throwawayaway576, Mixed Media, 2023',
         'Ladybird, Throwawayaway576, Mixed Media, 2023',
         '2023-10-11T20:05:57.407Z',
+        'https://preview.redd.it/ladybird-throwawayaway576-mixed-media-2023-v0-zh9s60cuttnc1.jpeg?width=1080&crop=smart&auto=webp&s=f2d12f8889fd5432f643ad2aaf9723324d1346fc',
         11, 1
     ),
     (
         '"What Books did You Start…s Week?: March 04, 2024',
-        ' We want to know!\n\nWe''re displaying the books found in this thread in the book strip at the top of the page. If you want the books you''re reading included, use the formatting below.\n\n**Formatting your book info**\n\nPost your book info in this format:\n\n**the title, by the author** \n\nFor example:\n\n**The Bogus Title, by Stephen King**\n\n* This formatting is voluntary but will help us include your selections in the book strip banner.\n\n* Entering your book data in this format will make it easy to collect the data, and the bold text will make the books titles stand out and might be a little easier to read.\n\n* Enter as many books per post as you like but only the parent comments will be included.',
+        'We want to know!We are displaying the books found in this thread in the book strip at the top of the page. If you want the books you''re reading included, use the formatting below.\n\n**Formatting your book info Post your book info in this format:**the title, by the author** \n\nFor example:\n\n**The Bogus Title, by Stephen King**\n\n* This formatting is voluntary but will help us include your selections in the book strip banner.\n\n* Entering your book data in this format will make it easy to collect the data, and the bold text will make the books titles stand out and might be a little easier to read.\n\n* Enter as many books per post as you like but only the parent comments will be included.',
         '2024-03-11T20:05:57.407Z',
+        'https://i.pinimg.com/originals/1c/c4/bb/1cc4bba1c944c8d7968e3c314394cc31.jpg',
         21, null
     );
+
 
 INSERT INTO comment (
         description,

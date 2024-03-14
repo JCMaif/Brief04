@@ -14,9 +14,9 @@ Ce projet est une base de données SQL permettant de répondre aux besoin pour l
 ## Conception
 
 Ce projet comporte les documents de conception du projet :
-- [les user stories](./userStories.md), 
-- [le MCD](./MCD.md), 
-- [le MLD](./mld.drawio)
+- [les user stories](./ressources/userStories.md), 
+- [le MCD](./ressources/MCD.md), 
+- [le MLD](./ressources/mld.drawio)
 
 
 ## Requêtes du projet (MVP)
@@ -62,3 +62,9 @@ Pour faciliter le travail du développeur, la plupart des requêtes présentant 
 - [] Nombre moyen de modifications d'un post déjà publié
 - [] Temps moyen passé sur un fil, regroupé par type de fil
 - [] Visualiser le log des modifications (Nom de compte, post, etc..)
+
+## Notes de debrief
+
+Présentation du projet par Jeremy. 
+
+Q/R
