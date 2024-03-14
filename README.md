@@ -68,3 +68,13 @@ Pour faciliter le travail du développeur, la plupart des requêtes présentant 
 Présentation du projet par Jeremy. 
 
 Q/R
+
+La gestion des notifications est faite dans la table user
+
+Birthday not null? 
+- oui pour checker l'âge mini des utilisateurs
+
+Commentaires possible d'ajouter une pièce jointe.
+
+Par défaut, les groupes sont privés et les membres sont visiteurs. 
+
